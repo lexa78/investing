@@ -19,6 +19,8 @@ class CreateSecuritiesTable extends Migration
             $table->string('name', 100)->comment('Название ценной бумаги');
             $table->bigInteger('category_id')->unsigned()->comment('id отрасли');
             $table->bigInteger('type_id')->unsigned()->comment('id типа (акция, облигация и т.д.) или (дивидент, купон)');
+            $table->string('figi', 50)->comment('Идентификатор ценной бумаги для работы с api');
+            $table->string('isin', 50)->comment('Мировой идентификатор ценной бумаги');
             $table->timestamps();
             $table->foreign('category_id')->references('id')->on('categories')->onUpdate('cascade')->onDelete('cascade');
             $table->foreign('type_id')->references('id')->on('types')->onUpdate('cascade')->onDelete('cascade');
