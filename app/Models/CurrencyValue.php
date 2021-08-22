@@ -5,6 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Курсы валют на конец дня
+ * Class CurrencyValue
+ * @package App\Models
+ */
 class CurrencyValue extends Model
 {
     use HasFactory;

@@ -5,6 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Действия с портфелем (пополнение / вывод)
+ * Class PAction
+ * @package App\Models
+ */
 class PAction extends Model
 {
     use HasFactory;

@@ -5,6 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Названия действий
+ * Class Action
+ * @package App\Models
+ */
 class Action extends Model
 {
     use HasFactory;

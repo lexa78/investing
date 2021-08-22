@@ -5,6 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Действие с ценной бумагой (покупка / продажа)
+ * Class SAction
+ * @package App\Models
+ */
 class SAction extends Model
 {
     use HasFactory;
